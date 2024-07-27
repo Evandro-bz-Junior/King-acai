@@ -198,6 +198,7 @@ header {
     gap: 10px;
     box-shadow:
         16px 14px 15px -12px rgba(0, 0, 0, 0.47);
+    box-shadow: inset -3px -1px 20px 13px #333;
     transition: all ease 0.3s;
 }
 
@@ -255,6 +256,7 @@ header {
     gap: 10px;
     box-shadow:
         16px 14px 15px -12px rgba(0, 0, 0, 0.47);
+        box-shadow: inset -3px -1px 20px 13px #333;
     transition: all ease 0.3s;
 }
 
@@ -292,6 +294,7 @@ header {
     border-radius: 20px;
     box-shadow:
         16px 14px 15px -12px rgba(0, 0, 0, 0.47);
+        box-shadow: inset -3px -1px 20px 13px #333;
     color: var(--text-color-primary);
 }
 
@@ -396,6 +399,7 @@ header {
     border-radius: 20px;
     box-shadow:
         16px 14px 15px -12px rgba(0, 0, 0, 0.47);
+        box-shadow: inset -3px -1px 20px 13px #333;
     height: 80%;
 
 }
@@ -425,6 +429,7 @@ header {
     border-radius: 20px;
     box-shadow:
         16px 14px 15px -12px rgba(0, 0, 0, 0.47);
+        box-shadow: inset -3px -1px 20px 13px #333;
 }
 
 .contact-img img {
@@ -577,7 +582,8 @@ footer a {
 
     .home-title {
         font-size: 4rem;
-        margin-top: 1.5rem;}
+        margin-top: 1.5rem;
+    }
 
     .home-img {
         width: 550px;
@@ -797,7 +803,8 @@ footer a {
     .page-content img {
         width: 85px;
         margin-left: -10px;
-    } 
+    }
+
     .page-content {
         width: 29%;
     }
@@ -851,11 +858,11 @@ footer a {
         top: 80px;
         right: -100%;
         width: 100%;
-          backdrop-filter: blur(48px);
+        backdrop-filter: blur(48px);
         background-color: var(--primary-color);
         z-index: 10;
         opacity: 0;
-        visibility: hidden; 
+        visibility: hidden;
         transition: opacity 0.3s ease-in, visibility 0.3s ease-in, right 0.3s ease-in;
         margin-top: 1.9rem;
     }
@@ -1014,7 +1021,7 @@ footer a {
         width: 70%;
     }
 
-    .social-link { 
+    .social-link {
         margin-bottom: 1rem;
     }
 
