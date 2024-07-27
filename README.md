@@ -43,13 +43,7 @@ O projeto tem como objetivo fornecer uma experiência agradável e interativa pa
 
 O projeto está hospedado no Vercel. Para visualizar a versão online, acesse o seguinte link: [King Açaí no Vercel](https://king-acai.vercel.app)
 
-## Contato
 
-Para qualquer dúvida, sugestão ou interesse em parcerias, entre em contato conosco:
-
-- **Email**: contato@kingacai.com
-- **WhatsApp**: [Clique para conversar](https://wa.me/1234567890)
-- **Endereço**: Rua Fictícia, 123, Cidade, Estado
 
 ## Licença
 
