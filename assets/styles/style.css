@@ -159,7 +159,7 @@ header {
     background-size: cover;
     width: 500px;
     height: 400px;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
 }
 
 /* produtos */
@@ -204,7 +204,7 @@ header {
 .product-item img {
     width: 150px;
     height: 150px;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
 }
 
 .product-item:hover {
@@ -261,7 +261,7 @@ header {
 .promotion-item img {
     width: 150px;
     height: 150px;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
 }
 
 .promotion-content {
@@ -312,7 +312,7 @@ header {
 
 .mount-box img {
     width: 275px;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
 
 }
 
@@ -402,7 +402,7 @@ header {
 
 .about-img img {
     width: 400px;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
 }
 
 /* contato */
@@ -429,7 +429,7 @@ header {
 
 .contact-img img {
     width: 400px;
-    filter: drop-shadow(4px 4px 8px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.3));
 }
 
 .contact-content {
@@ -565,17 +565,23 @@ footer a {
 @media (min-width: 769px) and (max-width: 1024px) {
     /* Estilos para dispositivos com largura entre 769px e 1024px */
 
-    header { 
+    header {
         padding: 0 3rem;
     }
 
     .home-section {
         padding: 0 2rem;
         flex-direction: column;
+        height: auto;
     }
 
-    .home-img { 
-        width: 550px; 
+    .home-title {
+        font-size: 4rem;
+        margin-top: 1.5rem;}
+
+    .home-img {
+        width: 550px;
+        margin-bottom: 1.5rem;
     }
 
     .container {
@@ -650,20 +656,20 @@ footer a {
 
     footer {
         padding: 1.5rem 1rem;
-        gap: 15px;
-        justify-content: space-between;
-        height: 15vh;
+        gap: 30px;
+        height: auto;
     }
 
     .page-content img {
         width: 90px;
+        margin-left: -10px;
     }
 
-    .footer-contact-content { 
-        gap: 10px; 
+    .footer-contact-content {
+        gap: 10px;
     }
 
-    .map-links h4{
+    .map-links h4 {
         text-align: center;
         width: 80%;
     }
@@ -673,9 +679,343 @@ footer a {
 /* Dispositivos com largura entre 481px e 768px */
 @media (min-width: 481px) and (max-width: 768px) {
     /* Estilos para dispositivos com largura entre 481px e 768px */
+
+    header {
+        padding: 0 2.5rem;
+    }
+
+    .nav-links ul {
+        gap: 25px;
+    }
+
+
+    .home-section {
+        padding: 0 2rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 82vh;
+    }
+
+    .home-img {
+        width: 550px;
+    }
+
+
+    .container {
+        padding: 2rem 2rem;
+        margin: 2rem 0;
+    }
+
+    .products-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .promotion-box {
+        gap: 20px;
+    }
+
+    .promotion-content {
+        width: 45%;
+    }
+
+    .promotion-item img {
+        width: 140px;
+    }
+
+
+    .mount-section {
+        gap: 10px;
+    }
+
+
+    .mount-box {
+        width: 45%;
+
+    }
+
+    .mount-box img {
+        width: 200px;
+    }
+
+    .complement-box {
+        width: 50%;
+    }
+
+    .complement-item span {
+        text-align: center;
+    }
+
+    .about-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 85%;
+        /* margin-top: 10px; */
+    }
+
+    .about-img {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .about-img img {
+        width: 300px;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+
+    .contact-img img {
+        width: 200px;
+        transform: scale(1.2);
+    }
+
+    .contact-img {
+        width: 85%;
+        justify-content: center;
+    }
+
+    .contact-content {
+        width: 85%;
+    }
+
+    footer {
+        padding: 1.5rem 1rem 1.5rem 0.5rem;
+        gap: 15px;
+        justify-content: space-between;
+        height: 17vh;
+        align-items: flex-start;
+    }
+
+    .page-content img {
+        width: 85px;
+        margin-left: -10px;
+    } 
+    .page-content {
+        width: 29%;
+    }
+
+    .footer-contact-content {
+        gap: 10px;
+    }
+
+    .map-links h4 {
+        text-align: center;
+        width: 80%;
+    }
+
 }
 
 /* Dispositivos com largura máxima de 480px */
 @media (max-width: 480px) {
     /* Estilos para dispositivos com largura máxima de 480px */
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+        width: 25px;
+        height: 3px;
+        background-color: #FFFFFF;
+    }
+
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner::before,
+    .hamburger.is-active .hamburger-inner::after {
+        background-color: #FFFFFF;
+    }
+
+    header {
+        padding: 0rem;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        width: 100%;
+          backdrop-filter: blur(48px);
+        background-color: var(--primary-color);
+        z-index: 10;
+        opacity: 0;
+        visibility: hidden; 
+        transition: opacity 0.3s ease-in, visibility 0.3s ease-in, right 0.3s ease-in;
+        margin-top: 1.9rem;
+    }
+
+    .nav-links ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        margin-top: 60px;
+        padding: 0;
+    }
+
+
+    .nav-links.active {
+        height: 100vh;
+        right: 0;
+        /* Posição final quando ativo */
+        opacity: 1;
+        visibility: visible;
+        /* Torna o elemento visível */
+    }
+
+    .nav-link {
+        opacity: 1 !important;
+    }
+
+    .no-scroll {
+        overflow: hidden;
+    }
+
+    .home-section {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .home-title {
+        font-size: 4rem;
+        font-weight: bolder;
+        margin-top: 1rem;
+    }
+
+    .home-content span {
+        width: 85%;
+    }
+
+    .home-img {
+        width: 300px;
+        height: 200px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 1rem;
+    }
+
+    .container {
+        padding: 1rem 2rem;
+        margin: 3rem 0;
+    }
+
+    .products-box {
+        flex-direction: column;
+        width: auto;
+        gap: 1rem;
+    }
+
+    .promotion-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promotion-item img {
+        width: 130px;
+    }
+
+    .promotion-content {
+        align-items: center;
+    }
+
+    .promotion-content span {
+        width: 80%;
+    }
+
+    .mount-section {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mount-box {
+        width: 95%;
+        padding: 0;
+    }
+
+    .mount-box img {
+        width: 250px;
+    }
+
+    .complement-box {
+        padding: 0.5rem;
+    }
+
+    .complement-item span {
+        text-align: center;
+    }
+
+    .about-section {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .about-content {
+        width: 95%;
+    }
+
+    .about-img {
+        justify-content: center;
+    }
+
+    .about-img img {
+        width: 85%;
+    }
+
+    .contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-content {
+        width: 95%;
+    }
+
+    .contact-img {
+        justify-content: center;
+    }
+
+    .contact-img img {
+        width: 85%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 1.3rem;
+        padding: 1.5rem 1rem;
+    }
+
+    .page-content {
+        width: 100%;
+    }
+
+    .page-content img {
+        margin-left: -20px;
+    }
+
+    .map-links ul {
+        width: 70%;
+    }
+
+    .social-link { 
+        margin-bottom: 1rem;
+    }
+
 }
