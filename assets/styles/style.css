@@ -17,6 +17,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow: hidden;
 }
 
 body {
@@ -521,6 +522,8 @@ footer a {
 .social-link i {
     margin-right: 5px;
 }
+
+
 
 /* Dispositivos com largura entre 769px e 1024px e em modo paisagem */
 @media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
